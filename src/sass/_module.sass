@@ -1,0 +1,146 @@
+.wrap
+  @extend %clrfx
+
+.img
+  &.tac
+    text-align: center
+
+.small
+  font-size: 75%
+
+input.submit
+  padding-bottom: 0
+  border: none
+
+// --------------------------------------------------
+// Block
+// --------------------------------------------------
+.tab
+  width: (293px / 2)
+  float: left
+  &:first-child
+    margin-right: 7px
+    a
+      @include replaceImg("/assets/img/tab_address01.png", 293px, 82px, 1)
+  &:last-child
+    a
+      @include replaceImg("/assets/img/tab_zip01.png", 293px, 82px, 1)
+  &.active
+    a
+      background-position: left (-82px / 2)
+
+.tabWrap
+  margin: 10px
+
+.tabcontent,
+.block_flowList
+  padding: 10px
+
+.tabcontent
+  border: 1px solid #ccc
+  background: #eceff6
+
+.block_top_flow
+  h2
+    margin-bottom: -14px
+
+
+.topAboutInner
+  padding: 0 20px
+
+// --------------------------------------------------
+// List
+// --------------------------------------------------
+.stepLists
+  // width: 270px * 3 + 60px * 2
+  li
+    margin-bottom: 10px
+    // background: #fff
+    // border: 1px solid #1378d6
+    #address &
+      &:last-child
+        margin-right: 0
+    .stepimg
+      background: #1378d6
+      color: #fff
+      font-size: 2em
+      font-weight: bold
+      text-align: center
+    .descWrap
+      padding: 10px
+      text-align: center
+      p
+        font-size: 1.5em
+      select
+        width: 100%
+    // &.active
+    //   border-color: #ff1717
+    //   .stepimg
+    //     background: #ff1717
+
+.flowList
+  width: 100%
+  margin: auto
+  .list
+    font-size: 12px
+    margin: 10px 0
+    padding: 12px
+    border: 1px solid #428f0f
+    background: #ffffff
+    .mark
+      font-weight: bold
+    .txt
+      width: 100%
+      font-weight: bold
+      td
+        width: 50%
+      span
+        color: red
+
+
+// --------------------------------------------------
+// table
+// --------------------------------------------------
+
+// --------------------------------------------------
+// icon
+// --------------------------------------------------
+
+// --------------------------------------------------
+// 2Column
+// --------------------------------------------------
+
+// --------------------------------------------------
+// btn
+// --------------------------------------------------
+.btn_start_01
+  margin: 20px auto 0
+
+#zip
+  position: relative
+  .block_submit
+  .descWrap
+    .input
+      position: relative
+    .errormsg
+      position: absolute
+      background: #fcc
+      border: 1px solid #b40505
+      -webkit-border-radius: 4px
+      border-radius: 4px
+      font-size: 12px
+      color: #b40505
+      padding: 10px
+      left: 20px
+      top: 20px
+
+
+.main_header
+  h2
+    font-size: 18px
+    background: #6CB13E
+    color: #fff
+    padding: 2px 10px
+
+.content.under
+  margin: 10px

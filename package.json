@@ -1,0 +1,27 @@
+{
+  "name": "ieul-satellite",
+  "version": "0.0.2",
+  "description": "ieul satellite",
+  "main": "",
+  "repository": "",
+  "author": "muyuu",
+  "license": "GPL",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-bower-task": "~0.3.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt-contrib-jshint": "~0.7.1",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.5",
+    "grunt-este-watch": "~0.1.15",
+    "grunt-usemin": "~2.0.2",
+    "load-grunt-config": "~0.7.0",
+    "grunt-notify": "~0.2.17",
+    "time-grunt": "^0.2.10",
+    "grunt-open": "^0.2.3"
+  }
+}
