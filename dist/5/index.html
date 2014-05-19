@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>AngularJS Sample</title>
+  </head>
+  <body ng-app="itemApp">
+    <input type="text" ng-model="query">
+    <ul ng-controller="itemCtrl">
+      <li ng-repeat="item in items | filter:query">
+        <p>name: {{item.name}}</p>
+        <p>price: {{item.price}}</p>
+      </li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.6/angular.min.js"></script>
+    <script>
+      var itemApp = angular.module('itemApp', []);
+      itemApp.controller('itemCtrl', function ($scope) {
+        $scope.items = [
+          {'name': 'apple', 'price': '100円'},
+          {'name': 'orange', 'price': '200円'},
+          {'name': 'coffee', 'price': '400円'},
+          {'name': 'tea', 'price': '800円'}
+        ];
+      });
+      
+      
+    </script>
+  </body>
+</html>
